@@ -20,7 +20,7 @@
 
 <?php include 'menu.php';?>
 
-<section class="success" id="header">
+<section class="success" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
