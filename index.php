@@ -66,7 +66,7 @@
     </header>
 
     <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
+    <section class="bg-dark" id="portfolio" style="color: #FFFFFF">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -163,7 +163,7 @@
     </section>
 
     <!-- About -->
-    <section id="about">
+    <section id="about" style="background-color: #3EB1C8">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
