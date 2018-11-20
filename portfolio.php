@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
+    <title>Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
@@ -29,6 +29,43 @@
             </div> 
         </div>
 </section>
+
+<section>
+	<div class="container">
+		<div class="row">
+			 <div class="col-sm-4">
+                    <img src="http://lorempixel.com/360/260/nature/">
+                </div>
+                <div class="col-sm-4">
+                    <img src="http://lorempixel.com/360/260/animals/">
+                </div>
+                <div class="col-sm-4">
+                    <img src="http://lorempixel.com/360/260/abstract/">
+                </div>
+				
+				
+				
+				 <div class="col-sm-4">
+                    <img src="http://lorempixel.com/360/260/nature/">
+                </div>
+                <div class="col-sm-4">
+                    <img src="http://lorempixel.com/360/260/animals/">
+                </div>
+                <div class="col-sm-4">
+                    <img src="http://lorempixel.com/360/260/abstract/">
+                </div>
+				
+				
+				<div class="col-sm-4">
+                    <img src="http://lorempixel.com/360/260/nature/">
+                </div>
+                <div class="col-sm-4">
+                    <img src="http://lorempixel.com/360/260/animals/">
+                </div>
+                <div class="col-sm-4">
+                    <img src="http://lorempixel.com/360/260/abstract/">
+                </div>
+</section
 
 
     
