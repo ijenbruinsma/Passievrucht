@@ -28,7 +28,7 @@
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
 <!--        <a class="navbar-brand js-scroll-trigger" href="#page-top">Passievrucht</a>-->
           <img src="img/aventus-logo.png" style="max-height: 70px;">
@@ -42,7 +42,7 @@
               <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#about">Over ons</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#team">Team</a>
@@ -67,7 +67,7 @@
     </header>
 
     <!-- Portfolio Grid -->
-    <section class="bg-dark" id="portfolio" style="color: #FFFFFF">
+    <section class="bg-light" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -163,13 +163,12 @@
       </div>
     </section>
 
-    <!-- About -->
+    <!-- Over ons  -->
     <section id="about" style="background-color: #3EB1C8">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">About</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">Over ons</h2>
           </div>
         </div>
         <div class="row">
@@ -249,8 +248,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">Het team dat aan deze website heeft gewerkt</h2>
           </div>
         </div>
         <div class="row">
