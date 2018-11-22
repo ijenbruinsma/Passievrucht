@@ -15,8 +15,7 @@
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    
-    <link href='fonts/themix.css' rel='stylesheet' type='text/css'>
+   
 
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
@@ -324,6 +323,9 @@
           </div>
         </div>
         <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+          </div>
         </div>
       </div>
     </section>
