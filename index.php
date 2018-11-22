@@ -14,8 +14,14 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    
    
+
+    <link href="vendor/fontawesome-free-5.5.0-web/css/all.min.css" rel="stylesheet" type="text/css">
+    
+    <link href='fonts/themix.css' rel='stylesheet' type='text/css'>
+
 
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
