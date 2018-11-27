@@ -36,7 +36,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
 <!--        <a class="navbar-brand js-scroll-trigger" href="#page-top">Passievrucht</a>-->
-          <img src="img/aventus-logo.png" style="max-height: 70px;">
+          <img src="img/aventuslogo.png" style="max-height: 70px;">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -94,29 +94,23 @@
 
         <div class="portfolio-item">
           <div class="item java">
-            <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img" src="img/portfolio/04-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Lines</h4>
-              <p class="text-muted">Branding</p>
+            <div class="jumbotron">
+              <h1>Java</h1>
             </div>
           </div>
           
           <div class="item web">
-            <p> Webdevelopment</p>
+            <div class="jumbotron">
+              <h1>Webdevelopment</h1>
+            </div>
           </div>
           
           <div class="item hardsoftware">
-            <p> Hard & Software</p>
+            <div class="jumbotron">
+              <h1>Hard & Software</h1>
+            </div>
           </div>
-        </div>
+        
 
         </div>
 
@@ -438,80 +432,16 @@
     </section>
     
 
-    <!-- Contact -->
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Contact</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <form id="contactForm" name="sentMessage" novalidate="novalidate">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input class="form-control" id="name" type="text" placeholder="Naam *" required="required" data-validation-required-message="Vul hier uw naam in.">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="email" type="email" placeholder="Email *" required="required" data-validation-required-message="Vul hier uw email in.">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="phone" type="tel" placeholder="Mobiel *" required="required" data-validation-required-message="Vul hier uw mobiele nummer in.">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <textarea class="form-control" id="message" placeholder="Uw bericht *" required="required" data-validation-required-message="Laat hier uw berichht achter."></textarea>
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="col-lg-12 text-center">
-                  <div id="success"></div>
-                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Verstuur bericht</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
+  <!--  -->
     
     <!-- Footer -->
-    <footer style="background-color:#3EB1C8 ;">
+    <footer style="background-color:#7474C1 ;">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-12">
             <span class="copyright">Copyright &copy; Passievrucht 2018</span>
           </div>
-          <div class="col-md-4">
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            
-          </div>
+          
         </div>
       </div>
     </footer>
