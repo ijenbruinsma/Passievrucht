@@ -84,9 +84,6 @@
             }
 
             #myInput {
-              background-image: url('/css/searchicon.png');
-              background-position: 10px 12px;
-              background-repeat: no-repeat;
               width: 100%;
               font-size: 16px;
               padding: 12px 20px 12px 40px;
@@ -115,6 +112,7 @@
               background-color: #eee;
             }
             </style>
+            
             <script>
             function myFunction() {
                 var input, filter, ul, li, a, i;
@@ -132,6 +130,7 @@
                 }
             }
             </script>
+        
         </div>
         <div class="row">
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -557,6 +556,7 @@
       </div>
     </section>
 
+    
     <!-- Footer -->
     <footer style="background-color:#3EB1C8 ;">
       <div class="container">
@@ -590,6 +590,7 @@
       </div>
     </footer>
 
+    
     <!-- Portfolio Modals -->
 
     <!-- Modal 1 -->
@@ -796,18 +797,19 @@
       </div>
     </div>
 
-    <!-- Bootstrap core JavaScript -->
+   
+    <!-- scripts -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
+    <!-- Plugin -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Contact form JavaScript -->
+    <!-- Contactformulier -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
 
-    <!-- Custom scripts for this template -->
+    <!-- custom -->
     <script src="js/agency.min.js"></script>
 
   </body>
