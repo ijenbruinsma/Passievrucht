@@ -812,6 +812,8 @@
     <!-- custom -->
     <script src="js/agency.min.js"></script>
 
+    <script src="js/isotope.pkgd.min.js"></script>
+
   </body>
 
 </html>
