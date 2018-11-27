@@ -71,7 +71,8 @@
       </div>
     </header>
 
-    <!-- Portfolio Grid -->
+    <!-- Portfolio section -->
+    
     <section class="bg-light" id="portfolio">
       <div class="container">
         <div class="row">
@@ -79,65 +80,12 @@
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Portfolio</h2>
           </div>
-          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Zoek naar projecten..." title="Zoek naar projecten">
-          <style>
-            * {
-              box-sizing: border-box;
-            }
-
-            #myInput {
-              width: 100%;
-              font-size: 16px;
-              padding: 12px 20px 12px 40px;
-              border: 1px solid #ddd;
-              margin-bottom: 12px;
-            }
-
-            #myUL {
-              list-style-type: none;
-              padding: 0;
-              margin: 0;
-            }
-
-            #myUL li a {
-              border: 1px solid #ddd;
-              margin-top: -1px; /* Prevent double borders */
-              background-color: #f6f6f6;
-              padding: 12px;
-              text-decoration: none;
-              font-size: 18px;
-              color: black;
-              display: block
-            }
-
-            #myUL li a:hover:not(.header) {
-              background-color: #eee;
-            }
-            </style>
-            
-            <script>
-            function myFunction() {
-                var input, filter, ul, li, a, i;
-                input = document.getElementById("myInput");
-                filter = input.value.toUpperCase();
-                ul = document.getElementById("myUL");
-                li = ul.getElementsByTagName("li");
-                for (i = 0; i < li.length; i++) {
-                    a = li[i].getElementsByTagName("a")[0];
-                    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                        li[i].style.display = "none";
-                    } else {
-                        li[i].style.display = "none";
-                    }
-                }
-            }
-            </script>
-        
-        </div>
+         
+      <div class="col-lg-12 text-center">
         
         <div class="portfolio-menu">
           <ul>
-            <li class="active" data-filter="*"></li>
+            <li class="active" data-filter="*">Alles</li>
             <li data-filter=".java">Java</li>
             <li data-filter=".web">Webdevelopment</li>
             <li data-filter=".hardsoftware">Hard & Software</li>
@@ -146,20 +94,36 @@
 
         <div class="portfolio-item">
           <div class="item java">
-            <img src="img/thumbnail.png" alt="">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img" src="img/portfolio/04-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Lines</h4>
+              <p class="text-muted">Branding</p>
+            </div>
           </div>
+          
           <div class="item web">
-            <img src="img/thumbnail.png" alt="">
+            <p> Webdevelopment</p>
           </div>
+          
           <div class="item hardsoftware">
-            <img src="img/thumbnail.png" alt="">
+            <p> Hard & Software</p>
           </div>
+        </div>
+
         </div>
 
 
 
         <!-- script portfolio -->
-        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="js/jquery.min.js"></script>
         <script src="js/isotope.pkgd.min.js"></script>
         <script>
 
@@ -179,6 +143,8 @@
           });
         </script>
 
+      </div>
+         
     </section>
 
     <!-- Over ons  -->
