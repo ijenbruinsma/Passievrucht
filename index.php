@@ -162,15 +162,21 @@
         <script src="js/jquery-1.12.4.min.js"></script>
         <script src="js/isotope.pkgd.min.js"></script>
         <script>
+
           $('.portfolio-item').isotope({
             itemSelector: 'item',
-            layoutMode: 'fitrows'
+            layoutMode: 'fitRows'
           });
           $('.portfolio-menu ul li').click(function(){
-            
-          }
+                $('.portfolio-menu ul li').removeClass('active');
+                $(this).addClass('active');
 
-          
+                var selector = $(this).attr('data-filter');
+                $('.portfolio-item').isotope({
+                    filter: selector
+                });
+                return false;
+          });
         </script>
 
     </section>
