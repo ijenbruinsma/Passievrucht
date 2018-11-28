@@ -73,37 +73,42 @@
             <h2 class="section-heading text-uppercase">Portfolio</h2>
           </div>
          
-      <div class="col-lg-12 text-center">
+      <div class="col-md-12 text-center">
         
         <div class="portfolio-menu">
           <ul>
             <li class="active" data-filter="*">Alles</li>
             <li data-filter=".java">Java</li>
             <li data-filter=".web">Webdevelopment</li>
-            <li data-filter=".hardsoftware">Hard & Software</li>
+            <li data-filter=".html">HTML</li>
           </ul>
         </div>
 
         <div class="portfolio-item">
           <div class="item java">
-            <div class="jumbotron">
-              <h1>Java</h1>
-            </div>
+            <img src="img/about/1.jpg">
+          </div>
+
+          <div class="item java">
+            <img src="img/about/2.jpg">
+          </div>
+
+          <div class="item web">
+            <img src="img/about/4.jpg">
           </div>
           
           <div class="item web">
-            <div class="jumbotron">
-              <h1>Webdevelopment</h1>
-            </div>
+            <img src="img/about/2.jpg">
           </div>
           
           <div class="item hardsoftware">
-            <div class="jumbotron">
-              <h1>Hard & Software</h1>
-            </div>
+            <img src="img/about/3.jpg">
+          </div>
+
+          <div class="item html">
+            <img src="img/about/4.jpg">
           </div>
         
-
         </div>
 
 
