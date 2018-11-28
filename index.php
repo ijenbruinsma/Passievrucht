@@ -346,7 +346,7 @@
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
               <h4>Steward Drysdale</h4>
-              <p class="text-dark">Api</p>
+              <p class="text-dark">CMS</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="#">
@@ -370,7 +370,7 @@
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
               <h4>Dylan Roubos</h4>
-              <p class="text-dark">Api</p>
+              <p class="text-dark">CMS</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="#">
