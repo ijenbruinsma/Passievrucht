@@ -147,7 +147,7 @@
           </div>
         </div>
           <div class="row" style="margin-top: 5%;">
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem; border:none; !important">
               <img class="card-img-top" src="img/about/aventus1.jpg" alt="Card image cap">
               <div class="card-body">
                   <h5 class="card-title">Over Aventus</h5>
@@ -155,7 +155,7 @@
                   <a target="_blank" href="https://www.aventus.nl/dit-aventus/over-aventus" class="btn btn-primary">Meer informatie</a>
               </div>
             </div>
-            <div class="card" style="width: 18rem; margin-left: 12%;">
+            <div class="card" style="width: 18rem; margin-left: 12%;  border:none; !important">
               <img class="card-img-top" src="img/about/aventus3.jpg" alt="Card image cap">
               <div class="card-body">
                   <h5 class="card-title">Onze visie op onderwijs</h5>
@@ -163,7 +163,7 @@
                   <a target="_blank" href="https://www.aventus.nl/dit-aventus/verder-komen-met-onze-kijk-op-onderwijs" class="btn btn-primary">Meer informatie</a>
               </div>
             </div>
-            <div class="card" style="width: 18rem; margin-left: 12%;">
+            <div class="card" style="width: 18rem; margin-left: 12%;  border:none; !important">
               <img class="card-img-top" src="img/about/aventus2.jpg" alt="Card image cap">
               <div class="card-body">
                   <h5 class="card-title">De locaties</h5>
