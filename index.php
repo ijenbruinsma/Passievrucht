@@ -149,75 +149,32 @@
             <h2 class="section-heading text-uppercase">Over ons</h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="timeline">
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>2009-2011</h4>
-                    <h4 class="subheading">Our Humble Beginnings</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>March 2011</h4>
-                    <h4 class="subheading">An Agency is Born</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>December 2012</h4>
-                    <h4 class="subheading">Transition to Full Service</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>July 2014</h4>
-                    <h4 class="subheading">Phase Two Expansion</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <h4>Be Part
-                    <br>Of Our
-                    <br>Story!</h4>
-                </div>
-              </li>
-            </ul>
+          <div class="row" style="margin-top: 5%;">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="img/about/aventus1.jpg" alt="Card image cap">
+              <div class="card-body">
+                  <h5 class="card-title">Over Aventus</h5>
+                  <p class="card-text">De school waar jij 't maakt. Ontdek hier alle over Aventus.</p>
+                  <a target="_blank" href="https://www.aventus.nl/dit-aventus/over-aventus" class="btn btn-primary">Meer informatie</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem; margin-left: 12%;">
+              <img class="card-img-top" src="img/about/aventus3.jpg" alt="Card image cap">
+              <div class="card-body">
+                  <h5 class="card-title">Onze visie op onderwijs</h5>
+                  <p class="card-text">Hoe werkt goed onderwijs? Zo pakken wij dat aan.</p>
+                  <a target="_blank" href="https://www.aventus.nl/dit-aventus/verder-komen-met-onze-kijk-op-onderwijs" class="btn btn-primary">Meer informatie</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem; margin-left: 12%;">
+              <img class="card-img-top" src="img/about/aventus2.jpg" alt="Card image cap">
+              <div class="card-body">
+                  <h5 class="card-title">De locaties</h5>
+                  <p class="card-text">Bekijk hier de locaties waar je een opleiding van Aventus kunt volgen.</p>
+                  <a target="_blank" href="https://www.aventus.nl/dit-aventus/locaties" class="btn btn-primary">Meer informatie</a>
+              </div>
+            </div>
           </div>
-        </div>
       </div>
     </section>
 
