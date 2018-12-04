@@ -53,15 +53,35 @@
   </nav>
 
   <!-- Header -->
-  <header class="masthead">
-    <div class="container">
-      <div class="intro-text">
-        <div class="intro-lead-in">Passievrucht</div>
-        <div class="intro-heading text-uppercase">Welkom</div>
-
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel" data-slide-to="1"></li>
+      <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" style=" height:768px ; background-size: cover center;">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="img/aventus-bg.jpg" alt="">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/aventus-bg.jpg" alt="">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/aventus-bg.jpg" alt="">
       </div>
     </div>
-  </header>
+    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Vorige</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Volgende</span>
+    </a>
+
+
+  </div>
+
 
   <!-- Portfolio section -->
 
@@ -179,7 +199,7 @@
               <h2 class="section-heading text-uppercase">Het team dat aan deze website heeft gewerkt</h2>
             </div>
           </div>
-          
+
           <div class="row">
             <div class="col-sm-4">
               <div class="team-member">
@@ -205,7 +225,7 @@
                 </ul>
               </div>
             </div>
-            
+
             <div class="col-sm-4">
               <div class="team-member">
                 <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
@@ -230,7 +250,7 @@
                 </ul>
               </div>
             </div>
-            
+
             <div class="col-sm-4">
               <div class="team-member">
                 <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
@@ -255,7 +275,7 @@
                 </ul>
               </div>
             </div>
-            
+
             <div class="col-sm-4">
               <div class="team-member">
                 <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
@@ -280,7 +300,7 @@
                 </ul>
               </div>
             </div>
-            
+
             <div class="col-sm-4">
               <div class="team-member">
                 <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
@@ -305,7 +325,7 @@
                 </ul>
               </div>
             </div>
-            
+
             <div class="col-sm-4">
               <div class="team-member">
                 <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
@@ -330,7 +350,7 @@
                 </ul>
               </div>
             </div>
-            
+
             <div class="col-sm-4">
               <div class="team-member">
                 <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
@@ -355,7 +375,7 @@
                 </ul>
               </div>
             </div>
-            
+
             <div class="col-sm-4">
               <div class="team-member">
                 <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
@@ -381,7 +401,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="row">
             <div class="col-lg-8 mx-auto text-center">
               <p class="large text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
@@ -389,10 +409,10 @@
           </div>
         </div>
       </section>
-      
+
 
       <!--  -->
-      
+
       <!-- Footer -->
       <footer style="background-color:#7474C1 ;">
         <div class="container">
@@ -400,7 +420,7 @@
             <div class="col-md-12">
               <span class="copyright">Copyright &copy; Passievrucht 2018</span>
             </div>
-            
+
           </div>
         </div>
       </footer>
