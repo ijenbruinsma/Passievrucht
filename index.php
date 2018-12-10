@@ -408,7 +408,7 @@
 
           <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-              <p class="large text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+              <p class="large text-dark">*Onze afbeeldingen zijn niet in beeld gebracht i.v.m. onze privacy. (Onze naam wel...)</p>
             </div>
           </div>
         </div>
