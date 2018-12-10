@@ -103,53 +103,9 @@
             </ul>
           </div>
 
-<<<<<<< HEAD
-        <div class="portfolio-item">
-          
-<?php
-                    
 
-$data = array(
-
-'project_title' => "1"
-);
-
-$url = "http://viggo.holidayrentcenter.com/project/get?" . http_build_query($data);
-CallAPI($url);
-
-
-
-function CallAPI($url, $data = false)
-{
-    $curl = curl_init();
-    curl_setopt($curl, CURLOPT_POST, 1);
-    if ($data)
-    curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
-             
-
-    curl_setopt($curl, CURLOPT_URL, $url);
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-    $result =
-    $result = curl_exec($curl);
-     curl_close($curl);
-
-    $array = json_decode($result, true);
-    echo "<pre>";
-    print_r($array);
-    echo "</pre>";
-    return $result;
-} 
-?>		
-					
-                                
-                               
-                                 
-                          
-                        
-                    
-                    
+        <div class="portfolio-item">       
          </div>
-=======
           <div class="portfolio-item">
             <div class="item java">
               <img src="img/about/1.jpg" alt="">
@@ -176,7 +132,7 @@ function CallAPI($url, $data = false)
       </div>
       
     </section>
->>>>>>> 06a5f127276b3d366a8b56f309e05b07ccf2c77f
+
 
 
     <!-- script portfolio -->
