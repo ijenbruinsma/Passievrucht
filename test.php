@@ -2,10 +2,7 @@
 
 $data = array(
 
-'project_year' => "2018", 
-'project_description' => "",
-'type_id' => "1",
-'project_creators' => "test",
+'project_title' => "1"
 );
 
 $url = "http://viggo.holidayrentcenter.com/project/get?" . http_build_query($data);
@@ -27,10 +24,17 @@ function CallAPI($url, $data = false)
     $result = curl_exec($curl);
      curl_close($curl);
 
-    $array = json_decode($result);
+    $array = json_decode($result, true);
     echo "<pre>";
-    var_dump($array);
+    print_r($array);
     echo "</pre>";
     return $result;
+	
+	require([], function(Filter){
+        var url = "http://viggo.holidayrentcenter.com/project/get?";
+        var filter = new Filter();
+        filter.placeAt(filterDiv);
+        filter.buildByExpr(url, "1=1");
+      });
 }
 ?>
