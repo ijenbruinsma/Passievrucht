@@ -447,9 +447,5 @@
       <script src="js/isotope.pkgd.min.js"></script>
 
     </body>
-
-<<<<<<< HEAD
 </html>
-=======
-    </html>
->>>>>>> 06a5f127276b3d366a8b56f309e05b07ccf2c77f
+
