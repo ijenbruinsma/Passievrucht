@@ -136,28 +136,20 @@
    <script src="js/isotope.pkgd.min.js"></script>
    
    <script>
+       $('.portfolio-item').isotope({
+           itemSelector: 'item',
+           layoutMode: 'fitRows'
+       });
+       $('.portfolio-menu ul li').click(function(){
+           $('.portfolio-menu ul li').removeClass('active');
+           $(this).addClass('active');
 
-    $('.portfolio-item').isotope({
-      itemSelector: 'item',
-      layoutMode: 'fitRows'
-    });
-    $('.portfolio-menu ul li').click(function(){
-      $('.portfolio-menu ul li').removeClass('active');
-      $(this).addClass('active');
-
-
-      <!-- script portfolio -->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/isotope.pkgd.min.js"></script>
-      <script>
-
-
-        var selector = $(this).attr('data-filter');
-        $('.portfolio-item').isotope({
-          filter: selector
-        });
-        return false;
-      });
+           var selector = $(this).attr('data-filter');
+           $('.portfolio-item').isotope({
+               filter: selector
+           });
+           return false;
+       });
     </script>
 
 
