@@ -100,6 +100,9 @@
             </ul>
           </div>
 
+
+        <div class="portfolio-item">       
+         </div>
           <div class="portfolio-item">
             <div class="item java">
               <img src="img/about/1.jpg" alt="">
@@ -124,6 +127,7 @@
 
            </div>
 
+
          </div>
        </div>
      </div>
@@ -144,6 +148,13 @@
     $('.portfolio-menu ul li').click(function(){
       $('.portfolio-menu ul li').removeClass('active');
       $(this).addClass('active');
+
+
+    <!-- script portfolio -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script>
+
 
       var selector = $(this).attr('data-filter');
       $('.portfolio-item').isotope({
@@ -227,6 +238,7 @@
             </div>
           </div>
 
+
           <div class="col-sm-4">
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
@@ -249,8 +261,34 @@
                   </a>
                 </li>
               </ul>
+
+            <div class="col-sm-4">
+              <div class="team-member">
+                <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
+                <h4>Bas Bluemink</h4>
+                <p class="text-dark">Website/Api</p>
+                <ul class="list-inline social-buttons">
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
             </div>
           </div>
+
 
           <div class="col-sm-4">
             <div class="team-member">
@@ -274,6 +312,31 @@
                   </a>
                 </li>
               </ul>
+
+            <div class="col-sm-4">
+              <div class="team-member">
+                <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
+                <h4>Koen van der Heijden</h4>
+                <p class="text-dark">Website/Api</p>
+                <ul class="list-inline social-buttons">
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
             </div>
           </div>
 
@@ -377,6 +440,7 @@
             </div>
           </div>
 
+
           <div class="col-sm-4">
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
@@ -399,6 +463,11 @@
                   </a>
                 </li>
               </ul>
+
+          <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+              <p class="large text-dark">*Onze afbeeldingen zijn niet in beeld gebracht i.v.m. onze privacy. (Onze naam wel...)</p>
+
             </div>
           </div>
         </div>
@@ -443,6 +512,12 @@
 
     <script src="js/isotope.pkgd.min.js"></script>
 
+
   </body>
 
   </html>
+
+    </body>
+</html>
+
+
