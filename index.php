@@ -101,8 +101,6 @@
           </div>
 
 
-          <div class="portfolio-item">       
-          </div>
           <div class="portfolio-item">
             <div class="item java">
               <img src="img/about/1.jpg" alt="">
@@ -337,7 +335,7 @@
                 </ul>
               </div>
             </div>
-            
+
 
             <div class="col-sm-4">
               <div class="team-member">
@@ -465,7 +463,7 @@
               </div>
             </div>
 
-            
+
           </section>
 
 
