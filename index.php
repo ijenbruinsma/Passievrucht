@@ -44,15 +44,12 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#team">Team</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Header -->
+  <!-- Header carousel-->
   <div id="carousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -121,327 +118,331 @@
             </div>
 
             <div class="item hardsoftware">
-              <img src="img/about/3.jpg" alt="">
-            </div>
+             <img src="img/about/3.jpg" alt="">
+             
+
+
+           </div>
+
+         </div>
+       </div>
+     </div>
+     
+   </section>
+
+
+   <!-- script portfolio -->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/isotope.pkgd.min.js"></script>
+   
+   <script>
+
+    $('.portfolio-item').isotope({
+      itemSelector: 'item',
+      layoutMode: 'fitRows'
+    });
+    $('.portfolio-menu ul li').click(function(){
+      $('.portfolio-menu ul li').removeClass('active');
+      $(this).addClass('active');
+
+      var selector = $(this).attr('data-filter');
+      $('.portfolio-item').isotope({
+        filter: selector
+      });
+      return false;
+    });
+  </script>
+
+
+  <!-- Over ons  -->
+  <section id="about" style="background-color: #3EB1C8">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Over ons</h2>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 5%;">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="img/about/aventus1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Over Aventus</h5>
+            <p class="card-text">De school waar jij 't maakt. Ontdek hier alle over Aventus.</p>
+            <a target="_blank" href="https://www.aventus.nl/dit-aventus/over-aventus" class="btn btn-primary">Meer informatie</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem; margin-left: 12%;">
+          <img class="card-img-top" src="img/about/aventus3.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Onze visie op onderwijs</h5>
+            <p class="card-text">Hoe werkt goed onderwijs? Zo pakken wij dat aan.</p>
+            <a target="_blank" href="https://www.aventus.nl/dit-aventus/verder-komen-met-onze-kijk-op-onderwijs" class="btn btn-primary">Meer informatie</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem; margin-left: 12%;">
+          <img class="card-img-top" src="img/about/aventus2.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">De locaties</h5>
+            <p class="card-text">Bekijk hier de locaties waar je een opleiding van Aventus kunt volgen.</p>
+            <a target="_blank" href="https://www.aventus.nl/dit-aventus/locaties" class="btn btn-primary">Meer informatie</a>
 
           </div>
         </div>
       </div>
-      
     </section>
 
-
-    <!-- script portfolio -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script>
-
-      $('.portfolio-item').isotope({
-        itemSelector: 'item',
-        layoutMode: 'fitRows'
-      });
-      $('.portfolio-menu ul li').click(function(){
-        $('.portfolio-menu ul li').removeClass('active');
-        $(this).addClass('active');
-
-        var selector = $(this).attr('data-filter');
-        $('.portfolio-item').isotope({
-          filter: selector
-        });
-        return false;
-      });
-    </script>
-
-
-    <!-- Over ons  -->
-    <section id="about" style="background-color: #3EB1C8">
+    <!-- Team -->
+    <section id="team">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Over ons</h2>
+            <h2 class="section-heading text-uppercase">Het team dat aan deze website heeft gewerkt</h2>
           </div>
         </div>
 
-        <div class="row" style="margin-top: 5%;">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="img/about/aventus1.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Over Aventus</h5>
-              <p class="card-text">De school waar jij 't maakt. Ontdek hier alle over Aventus.</p>
-              <a target="_blank" href="https://www.aventus.nl/dit-aventus/over-aventus" class="btn btn-primary">Meer informatie</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem; margin-left: 12%;">
-            <img class="card-img-top" src="img/about/aventus3.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Onze visie op onderwijs</h5>
-              <p class="card-text">Hoe werkt goed onderwijs? Zo pakken wij dat aan.</p>
-              <a target="_blank" href="https://www.aventus.nl/dit-aventus/verder-komen-met-onze-kijk-op-onderwijs" class="btn btn-primary">Meer informatie</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem; margin-left: 12%;">
-            <img class="card-img-top" src="img/about/aventus2.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">De locaties</h5>
-              <p class="card-text">Bekijk hier de locaties waar je een opleiding van Aventus kunt volgen.</p>
-              <a target="_blank" href="https://www.aventus.nl/dit-aventus/locaties" class="btn btn-primary">Meer informatie</a>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Team -->
-      <section id="team">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <h2 class="section-heading text-uppercase">Het team dat aan deze website heeft gewerkt</h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
+              <h4>Janberd Aydin</h4>
+              <p class="text-dark">Webdesign</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="team-member">
-                <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-                <h4>Janberd Aydin</h4>
-                <p class="text-dark">Webdesign</p>
-                <ul class="list-inline social-buttons">
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-sm-4">
-              <div class="team-member">
-                <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-                <h4>Ijen Bruinsma</h4>
-                <p class="text-dark">Webdesign</p>
-                <ul class="list-inline social-buttons">
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-sm-4">
-              <div class="team-member">
-                <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-                <h4>Bas Bluemink</h4>
-                <p class="text-dark">Api</p>
-                <ul class="list-inline social-buttons">
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-sm-4">
-              <div class="team-member">
-                <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-                <h4>Koen van der Heijden</h4>
-                <p class="text-dark">Api</p>
-                <ul class="list-inline social-buttons">
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-sm-4">
-              <div class="team-member">
-                <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-                <h4>Viggo de Vries</h4>
-                <p class="text-dark">Api</p>
-                <ul class="list-inline social-buttons">
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-sm-4">
-              <div class="team-member">
-                <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-                <h4>Steward Drysdale</h4>
-                <p class="text-dark">CMS</p>
-                <ul class="list-inline social-buttons">
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-sm-4">
-              <div class="team-member">
-                <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-                <h4>Dylan Roubos</h4>
-                <p class="text-dark">CMS</p>
-                <ul class="list-inline social-buttons">
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-sm-4">
-              <div class="team-member">
-                <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-                <h4>Teun Ankesmit</h4>
-                <p class="text-dark">Api</p>
-                <ul class="list-inline social-buttons">
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
+              <h4>Ijen Bruinsma</h4>
+              <p class="text-dark">Webdesign</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-lg-8 mx-auto text-center">
-              <p class="large text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
+              <h4>Bas Bluemink</h4>
+              <p class="text-dark">Api</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
+              <h4>Koen van der Heijden</h4>
+              <p class="text-dark">Api</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
+              <h4>Viggo de Vries</h4>
+              <p class="text-dark">Api</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
+              <h4>Steward Drysdale</h4>
+              <p class="text-dark">CMS</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
+              <h4>Dylan Roubos</h4>
+              <p class="text-dark">CMS</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
+              <h4>Teun Ankesmit</h4>
+              <p class="text-dark">Api</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
 
-
-      <!--  -->
-
-      <!-- Footer -->
-      <footer style="background-color:#7474C1 ;">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <span class="copyright">Copyright &copy; Passievrucht 2018</span>
-            </div>
-
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="large text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
           </div>
         </div>
-      </footer>
+      </div>
+    </section>
 
 
-      <!-- scripts -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--  -->
 
-      <!-- Plugin -->
-      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Footer -->
+    <footer style="background-color:#7474C1 ;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <span class="copyright">Copyright &copy; Passievrucht 2018</span>
+          </div>
 
-      <!-- Contactformulier -->
-      <script src="js/jqBootstrapValidation.js"></script>
-      <script src="js/contact_me.js"></script>
+        </div>
+      </div>
+    </footer>
 
-      <!-- custom -->
-      <script src="js/agency.min.js"></script>
 
-      <script src="js/isotope.pkgd.min.js"></script>
+    <!-- scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    </body>
+    <!-- Plugin -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    </html>
+    <!-- Contactformulier -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- custom -->
+    <script src="js/agency.min.js"></script>
+
+    <script src="js/isotope.pkgd.min.js"></script>
+
+  </body>
+
+  </html>
