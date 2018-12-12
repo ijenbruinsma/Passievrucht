@@ -89,7 +89,7 @@
         <div class="col-md-12 text-center">
 
           <div class="portfolio-menu text-center">
-            
+
             <ul>
               Filter:
               <li class="active" data-filter="*">Alles</li>
@@ -97,8 +97,8 @@
               <li data-filter=".web">Webdevelopment</li>           
               Soort:
               <li class="active" data-filter="*">Jaar</li>
-              <li data-filter=".java">Naam</li>
-              <li data-filter=".web">Datum</li>
+              <li data-filter=".naam">Naam</li>
+              <li data-filter=".datum">Datum</li>
             </ul>
           </div>
 
