@@ -82,15 +82,15 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Portfolio</h2>
-        </div>
-
+       
         <div class="col-md-12 text-center">
+
+         
 
           <div class="portfolio-menu text-center">
 
             <ul>
+              <h2 class="section-heading text-uppercase">Portfolio</h2>
               Filteren op:
               <li class="active" data-filter="*">Alles</li>
               <li data-filter=".java">Java</li>
@@ -105,7 +105,7 @@
 
           <div class="portfolio-item">
             <div class="item java">
-              <img src="img/about/1.jpg" alt="">
+              <img src="img/about/1.jpg" alt="" style="width: 100%;">
               <p> Naam project: </p>
               <p>Vak: </p>
               <p>Datum: </p>
@@ -113,7 +113,7 @@
             </div>
 
             <div class="item java">
-              <img src="img/about/2.jpg" alt="">
+              <img src="img/about/2.jpg" alt="" style="width: 100%;">
               <p> Naam project: </p>
               <p>Vak: </p>
               <p>Datum: </p>
@@ -121,7 +121,7 @@
             </div>
 
             <div class="item web">
-              <img src="img/about/4.jpg" alt="">
+              <img src="img/about/4.jpg" alt="" style="width: 100%;">
               <p> Naam project: </p>
               <p>Vak: </p>
               <p>Datum: </p>
@@ -129,7 +129,7 @@
             </div>
 
             <div class="item web">
-              <img src="img/about/2.jpg" alt="">
+              <img src="img/about/2.jpg" alt="" style="width: 100%;">
               <p> Naam project: </p>
               <p>Vak: </p>
               <p>Datum: </p>
@@ -137,7 +137,7 @@
             </div>
 
             <div class="item hardsoftware">
-             <img src="img/about/3.jpg" alt="">
+             <img src="img/about/3.jpg" alt="" style="width: 100%;">
              <p> Naam project: </p>
               <p>Vak: </p>
               <p>Datum: </p>
