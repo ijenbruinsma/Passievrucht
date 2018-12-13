@@ -97,7 +97,7 @@
               <li data-filter=".web">Webdevelopment</li>           
               Sorteren op:
               <li class="active" data-filter="*">Jaar</li>
-              <li data-filter=".naam">Naam</li>
+              <li data-filter=".naam">A tot Z</li>
               <li data-filter=".datum">Datum</li>
             </ul>
           </div>
@@ -106,22 +106,37 @@
           <div class="portfolio-item">
             <div class="item java">
               <img src="img/about/1.jpg" alt="">
+              <p> Naam: </p>
+              <p>Vak: </p>
+              <p>Datum: </p>
             </div>
 
             <div class="item java">
               <img src="img/about/2.jpg" alt="">
+              <p> Naam: </p>
+              <p>Vak: </p>
+              <p>Datum: </p>
             </div>
 
             <div class="item web">
               <img src="img/about/4.jpg" alt="">
+              <p> Naam: </p>
+              <p>Vak: </p>
+              <p>Datum: </p>
             </div>
 
             <div class="item web">
               <img src="img/about/2.jpg" alt="">
+              <p> Naam: </p>
+              <p>Vak: </p>
+              <p>Datum: </p>
             </div>
 
             <div class="item hardsoftware">
              <img src="img/about/3.jpg" alt="">
+             <p> Naam: </p>
+              <p>Vak: </p>
+              <p>Datum: </p>
            </div>
          </div>
        
