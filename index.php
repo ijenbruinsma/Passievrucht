@@ -91,11 +91,11 @@
           <div class="portfolio-menu text-center">
 
             <ul>
-              Filter:
+              Filteren op:
               <li class="active" data-filter="*">Alles</li>
               <li data-filter=".java">Java</li>
               <li data-filter=".web">Webdevelopment</li>           
-              Soort:
+              Sorteren op:
               <li class="active" data-filter="*">Jaar</li>
               <li data-filter=".naam">Naam</li>
               <li data-filter=".datum">Datum</li>
@@ -122,11 +122,9 @@
 
             <div class="item hardsoftware">
              <img src="img/about/3.jpg" alt="">
-             
            </div>
-
-
          </div>
+       
        </div>
      </div>
      
