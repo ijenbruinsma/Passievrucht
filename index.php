@@ -109,6 +109,7 @@
               <p> Naam project: </p>
               <p>Vak: </p>
               <p>Datum: </p>
+              <p>Leerjaar: </p>
             </div>
 
             <div class="item java">
@@ -116,6 +117,7 @@
               <p> Naam project: </p>
               <p>Vak: </p>
               <p>Datum: </p>
+              <p>Leerjaar: </p>
             </div>
 
             <div class="item web">
@@ -123,6 +125,7 @@
               <p> Naam project: </p>
               <p>Vak: </p>
               <p>Datum: </p>
+              <p>Leerjaar: </p>
             </div>
 
             <div class="item web">
@@ -130,6 +133,7 @@
               <p> Naam project: </p>
               <p>Vak: </p>
               <p>Datum: </p>
+              <p>Leerjaar: </p>
             </div>
 
             <div class="item hardsoftware">
@@ -137,6 +141,7 @@
              <p> Naam project: </p>
               <p>Vak: </p>
               <p>Datum: </p>
+              <p>Leerjaar: </p>
            </div>
          </div>
        
