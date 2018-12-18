@@ -2,7 +2,8 @@
 
 $data = array(
 
-'project_title' => "1"
+'project_title' => ""
+
 );
 
 $url = "http://viggo.holidayrentcenter.com/project/get?" . http_build_query($data);
@@ -28,7 +29,8 @@ function CallAPI($url, $data = false)
     echo "<pre>";
     print_r($array);
     echo "</pre>";
-    return $result;
+
+   return $result;
 }
 
 

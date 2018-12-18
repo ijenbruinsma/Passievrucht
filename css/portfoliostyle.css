@@ -28,8 +28,9 @@
 
 }
 .portfolio-item .item{
-	width: 300px;
+	width: 350px;
 	float: left;
 	margin: 10px;
+	border: solid #7474C1 1px;
 
 }
