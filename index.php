@@ -1,3 +1,32 @@
+<?php
+                    
+
+$data = array(
+
+'project_title' => "1"
+);
+
+$url = "http://viggo.holidayrentcenter.com/project/get?" . http_build_query($data);
+$data = CallAPI($url);
+
+
+
+function CallAPI()
+{
+    $url = "http://viggo.holidayrentcenter.com/project/get";
+
+  $curl = curl_init($url);
+  curl_setopt($curl, CURLOPT_POST, true);
+  //Used if $data is defined
+  curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+  $response = curl_exec($curl);
+  curl_close($curl);
+  //Decode the given data from the api
+  $data = json_decode($response, true);
+	
+	return $data;
+} 
+?>		
 <!DOCTYPE html>
 <html lang="en">
 
@@ -102,54 +131,61 @@
               <li data-filter=".web">Webdevelopment</li>
             </ul>
           </div>
-
-<<<<<<< HEAD
-        <div class="portfolio-item">
-          
+<div class="portfolio-item">
 <?php
-                    
+$data = CallAPI();
 
-$data = array(
+ foreach ($data['records'] as $project) {
+	 ?>
+	 <div class="portfolio-item">
+		<div class="item java">
+		  <img src="img/about/1.jpg" alt="">
+		  <tr>
+			<td><h1><?php echo $project['project_title']; ?></h1></td>
+			<td><p><?php echo $project['project_description']; ?></p></td>
+			<td><small> id: <?php echo $project['project_id']?></small></td>
+		</div>
+	</div>
+	
 
-'project_title' => "1"
-);
+	<?php
+	 }
+	?>
+        
+         <?php
+		/* foreach ($data as $dat) {
+			var_dump($dat);
+			
+		$servers = array();
+		$handle = @fopen("data/data.txt", "r");
+		
+		if ($handle) {
+			while (($buffer = fgets($handle)) !== false) {
+			$line = explode ("|", $buffer);
+			$servers[] = array(
+				"project_id" => $line[0],
+				"project_title" => $line[1],
+				"project_year" => $line[3],
+				"project_thumbnail" => $line[4],
+				"project_link" => $line[5],
+				"project_description" => $line[6],
+				
+				);
+			}
+			fclose($handle);
+		}
+		$goodValues = array_filter($servers, function($e){
+			return $e['type'] == "good";
+			var_dump(array_filter($arr, function($k)
+            {
+				return $k == 'b';
+			}, ARRAY_FILTER_USE_BOTH));
+		});
+	}*/?>
 
-$url = "http://viggo.holidayrentcenter.com/project/get?" . http_build_query($data);
-CallAPI($url);
-
-
-
-function CallAPI($url, $data = false)
-{
-    $curl = curl_init();
-    curl_setopt($curl, CURLOPT_POST, 1);
-    if ($data)
-    curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
-             
-
-    curl_setopt($curl, CURLOPT_URL, $url);
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-    $result =
-    $result = curl_exec($curl);
-     curl_close($curl);
-
-    $array = json_decode($result, true);
-    echo "<pre>";
-    print_r($array);
-    echo "</pre>";
-    return $result;
-} 
-?>		
 					
-                                
-                               
-                                 
-                          
-                        
-                    
-                    
          </div>
-=======
+
           <div class="portfolio-item">
             <div class="item java">
               <img src="img/about/1.jpg" alt="">
@@ -176,7 +212,7 @@ function CallAPI($url, $data = false)
       </div>
       
     </section>
->>>>>>> 06a5f127276b3d366a8b56f309e05b07ccf2c77f
+
 
 
     <!-- script portfolio -->
@@ -491,9 +527,4 @@ function CallAPI($url, $data = false)
       <script src="js/isotope.pkgd.min.js"></script>
 
     </body>
-
-<<<<<<< HEAD
 </html>
-=======
-    </html>
->>>>>>> 06a5f127276b3d366a8b56f309e05b07ccf2c77f
