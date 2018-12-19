@@ -1,32 +1,3 @@
-<?php
-                    
-
-$data = array(
-
-'project_title' => "1"
-);
-
-$url = "http://viggo.holidayrentcenter.com/project/get?" . http_build_query($data);
-$data = CallAPI($url);
-
-
-
-function CallAPI()
-{
-    $url = "http://viggo.holidayrentcenter.com/project/get";
-
-  $curl = curl_init($url);
-  curl_setopt($curl, CURLOPT_POST, true);
-  //Used if $data is defined
-  curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-  $response = curl_exec($curl);
-  curl_close($curl);
-  //Decode the given data from the api
-  $data = json_decode($response, true);
-	
-	return $data;
-} 
-?>		
 <!DOCTYPE html>
 <html lang="en">
 
@@ -126,111 +97,47 @@ function CallAPI()
               <li data-filter=".web">Webdevelopment</li>           
               Sorteren op:
               <li class="active" data-filter="*">Leerjaar</li>
-              <li data-filter=".naam">A tot Z</li>
               <li data-filter=".datum">Datum</li>
             </ul>
           </div>
-<<<<<<< HEAD
-<div class="portfolio-item">
-<?php
-$data = CallAPI();
+		  
+		  <?php
 
- foreach ($data['records'] as $project) {
+function CallAPI()
+{
+  $url = "http://viggo.holidayrentcenter.com/project/get";
+
+  $curl = curl_init($url);
+  curl_setopt($curl, CURLOPT_POST, true);
+  //Used if $data is defined
+  curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+  $response = curl_exec($curl);
+  curl_close($curl);
+  //Decode the given data from the api
+  $data = json_decode($response, true);
+  
+  return $data;
+}
+?>
+
+		  
+         <div class="portfolio-item">
+<?php
+		$data = CallAPI();
+
+ foreach ($data['records'] as $project) {   
 	 ?>
 	 <div class="portfolio-item">
 		<div class="item java">
-		  <img src="img/about/1.jpg" alt="">
-		  <tr>
-			<td><h1><?php echo $project['project_title']; ?></h1></td>
-			<td><p><?php echo $project['project_description']; ?></p></td>
-			<td><small> id: <?php echo $project['project_id']?></small></td>
-		</div>
-	</div>
-	
-
-	<?php
-	 }
-	?>
-        
-         <?php
-		/* foreach ($data as $dat) {
-			var_dump($dat);
-			
-		$servers = array();
-		$handle = @fopen("data/data.txt", "r");
-		
-		if ($handle) {
-			while (($buffer = fgets($handle)) !== false) {
-			$line = explode ("|", $buffer);
-			$servers[] = array(
-				"project_id" => $line[0],
-				"project_title" => $line[1],
-				"project_year" => $line[3],
-				"project_thumbnail" => $line[4],
-				"project_link" => $line[5],
-				"project_description" => $line[6],
-				
-				);
-			}
-			fclose($handle);
-		}
-		$goodValues = array_filter($servers, function($e){
-			return $e['type'] == "good";
-			var_dump(array_filter($arr, function($k)
-            {
-				return $k == 'b';
-			}, ARRAY_FILTER_USE_BOTH));
-		});
-	}*/?>
-
-					
-         </div>
-=======
-
->>>>>>> 3a7a3d7f7e12ef6cfdad3a69d6287067360849ae
-
-          <div class="portfolio-item">
-            <div class="item java">
               <img src="img/about/1.jpg" alt="" style="width: 100%;">
-              <p> Naam project: </p>
-              <p>Vak: </p>
-              <p>Datum: </p>
-              <p>Leerjaar: </p>
+              <p>Naam project:<?php echo "$project[project_title]"?> </p>
+              <p>Vak: <?php echo "$project[course_id]"?></p>
+              <p>Leerjaar: <?php echo "$project[project_year]"?> </p>
+			  
             </div>
-
-            <div class="item java">
-              <img src="img/about/2.jpg" alt="" style="width: 100%;">
-              <p> Naam project: </p>
-              <p>Vak: </p>
-              <p>Datum: </p>
-              <p>Leerjaar: </p>
-            </div>
-
-            <div class="item web">
-              <img src="img/about/4.jpg" alt="" style="width: 100%;">
-              <p> Naam project: </p>
-              <p>Vak: </p>
-              <p>Datum: </p>
-              <p>Leerjaar: </p>
-            </div>
-
-            <div class="item web">
-              <img src="img/about/2.jpg" alt="" style="width: 100%;">
-              <p> Naam project: </p>
-              <p>Vak: </p>
-              <p>Datum: </p>
-              <p>Leerjaar: </p>
-            </div>
-
-            <div class="item hardsoftware">
-             <img src="img/about/3.jpg" alt="" style="width: 100%;">
-             <p> Naam project: </p>
-              <p>Vak: </p>
-              <p>Datum: </p>
-              <p>Leerjaar: </p>
+ <?php } ?>
            </div>
-         </div>
-       
+         </div>   
        </div>
      </div>
      
@@ -296,24 +203,6 @@ $data = CallAPI();
         </div>
       </div>
     </section>
-<<<<<<< HEAD
-
-
-
-    <!-- script portfolio -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script>
-
-      $('.portfolio-item').isotope({
-        itemSelector: 'item',
-        layoutMode: 'fitRows'
-      });
-      $('.portfolio-menu ul li').click(function(){
-        $('.portfolio-menu ul li').removeClass('active');
-        $(this).addClass('active');
-=======
->>>>>>> 3a7a3d7f7e12ef6cfdad3a69d6287067360849ae
 
     <!-- Team -->
     <section id="team">
@@ -565,14 +454,8 @@ $data = CallAPI();
 
 
     </body>
-<<<<<<< HEAD
-</html>
-=======
 
     </html>
 
   </body>
   </html>
-
-
->>>>>>> 3a7a3d7f7e12ef6cfdad3a69d6287067360849ae
