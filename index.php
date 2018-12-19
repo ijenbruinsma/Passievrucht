@@ -97,7 +97,6 @@
               <li data-filter=".web">Webdevelopment</li>           
               Sorteren op:
               <li class="active" data-filter="*">Leerjaar</li>
-              <li data-filter=".naam">A tot Z</li>
               <li data-filter=".datum">Datum</li>
             </ul>
           </div>
@@ -106,49 +105,54 @@
           <div class="portfolio-item">
             
             <div class="item java">
+
+		  
+		  <?php
+
+function CallAPI()
+{
+  $url = "http://viggo.holidayrentcenter.com/project/get";
+
+  $curl = curl_init($url);
+  curl_setopt($curl, CURLOPT_POST, true);
+  //Used if $data is defined
+  curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+  $response = curl_exec($curl);
+  curl_close($curl);
+  //Decode the given data from the api
+  $data = json_decode($response, true);
+  
+  return $data;
+}
+?>
+
+		  
+         <div class="portfolio-item">
+<?php
+		$data = CallAPI();
+
+ foreach ($data['records'] as $project) {   
+	 ?>
+	 <div class="portfolio-item">
+		<div class="item java">
+
               <img src="img/about/1.jpg" alt="" style="width: 100%;">
-              <p> Naam project: </p>
-              <p>Vak: </p>
-              <p>Datum: </p>
-              <p>Leerjaar: </p>
+              <p>Naam project:<?php echo "$project[project_title]"?> </p>
+              <p>Vak: <?php echo "$project[course_id]"?></p>
+              <p>Leerjaar: <?php echo "$project[project_year]"?> </p>
+			  
             </div>
-
-            <div class="item java">
-              <img src="img/about/2.jpg" alt="" style="width: 100%;">
-              <p> Naam project: </p>
-              <p>Vak: </p>
-              <p>Datum: </p>
-              <p>Leerjaar: </p>
-            </div>
-
-            <div class="item web">
-              <img src="img/about/4.jpg" alt="" style="width: 100%;">
-              <p> Naam project: </p>
-              <p>Vak: </p>
-              <p>Datum: </p>
-              <p>Leerjaar: </p>
-            </div>
-
-            <div class="item web">
-              <img src="img/about/2.jpg" alt="" style="width: 100%;">
-              <p> Naam project: </p>
-              <p>Vak: </p>
-              <p>Datum: </p>
-              <p>Leerjaar: </p>
-            </div>
-
-            <div class="item hardsoftware">
-             <img src="img/about/3.jpg" alt="" style="width: 100%;">
-             <p> Naam project: </p>
-              <p>Vak: </p>
-              <p>Datum: </p>
-              <p>Leerjaar: </p>
+ <?php } ?>
            </div>
+
          
          </div>
 
          
        
+
+         </div>   
+
        </div>
      </div>
      
@@ -470,5 +474,3 @@
 
   </body>
   </html>
-
-
