@@ -104,6 +104,7 @@
 
 
           <div class="portfolio-item">
+            
             <div class="item java">
               <img src="img/about/1.jpg" alt="" style="width: 100%;">
               <p> Naam project: </p>
@@ -143,7 +144,10 @@
               <p>Datum: </p>
               <p>Leerjaar: </p>
            </div>
+         
          </div>
+
+         
        
        </div>
      </div>
