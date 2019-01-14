@@ -98,12 +98,6 @@
              
             </ul>
           </div>
-
-
-          <div class="portfolio-item">
-            
-            <div class="item java">
-
 		  
 		  <?php
 
@@ -133,7 +127,6 @@ function CallAPI()
 	 ?>
 	 <div class="portfolio-item">
 		<div class="item java">
-
               <img src="img/about/1.jpg" alt="" style="width: 100%;">
               <p>Naam project:<?php echo "$project[project_title]"?> </p>
               <p>Vak: <?php echo "$project[course_id]"?></p>
@@ -142,15 +135,7 @@ function CallAPI()
             </div>
  <?php } ?>
            </div>
-
-         
-         </div>
-
-         
-       
-
          </div>   
-
        </div>
      </div>
      
