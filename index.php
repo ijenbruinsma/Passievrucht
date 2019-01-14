@@ -95,12 +95,20 @@
               <li class="active" data-filter="*">Alles</li>
               <li data-filter=".java">Java</li>
               <li data-filter=".web">Webdevelopment</li>           
+
             </div>
 
 
           <div class="portfolio-item">
 
             <div class="item java">
+
+
+             
+            </ul>
+          </div>
+		  
+		  <?php
 
 
               <?php
@@ -116,6 +124,7 @@
                 $response = curl_exec($curl);
                 curl_close($curl);
   //Decode the given data from the api
+
                 $data = json_decode($response, true);
 
                 return $data;
@@ -126,6 +135,36 @@
 
                 <?php
                 $data = CallAPI();
+
+  $data = json_decode($response, true);
+  
+  return $data;
+}
+?>
+
+		  
+         <div class="portfolio-item">
+<?php
+		$data = CallAPI();
+
+ foreach ($data['records'] as $project) {   
+	 ?>
+	 <div class="portfolio-item">
+		<div class="item java">
+              <img src="img/about/1.jpg" alt="" style="width: 100%;">
+              <p>Naam project:<?php echo "$project[project_title]"?> </p>
+              <p>Vak: <?php echo "$project[course_id]"?></p>
+              <p>Leerjaar: <?php echo "$project[project_year]"?> </p>
+			  
+            </div>
+ <?php } ?>
+           </div>
+         </div>   
+       </div>
+     </div>
+     
+   </section>
+
 
                 foreach ($data['records'] as $project) {   
                   ?>
