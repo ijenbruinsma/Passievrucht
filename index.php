@@ -95,9 +95,7 @@
               <li class="active" data-filter="*">Alles</li>
               <li data-filter=".java">Java</li>
               <li data-filter=".web">Webdevelopment</li>           
-              Sorteren op:
-              <li class="active" data-filter="*">Leerjaar</li>
-              <li data-filter=".datum">Datum</li>
+             
             </ul>
           </div>
 		  
